@@ -28,6 +28,7 @@ LOCAL_MODULE_OWNER := invensense
 LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 # Comment out for ICS. Affects Android LOG macros.
 LOCAL_CFLAGS += -DANDROID_JELLYBEAN
+LOCAL_CFLAGS += -Wno-error
 
 ifeq ($(ENG_BUILD),1)
 ifeq ($(COMPILE_INVENSENSE_COMPASS_CAL),1)
@@ -108,6 +109,7 @@ else
 include $(CLEAR_VARS)
 LOCAL_CFLAGS += -DANDROID_JELLYBEAN
 LOCAL_CFLAGS += -DLINUX=1
+LOCAL_CFLAGS += -Wno-error
 LOCAL_MODULE := libmllite
 LOCAL_SRC_FILES := $(call all-c-files-under, software/core/mllite)
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/software/core/mllite

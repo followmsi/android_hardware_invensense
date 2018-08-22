@@ -117,7 +117,7 @@ typedef uint64_t  __u64;
 
 #ifndef __cplusplus
 #ifndef __KERNEL__
-typedef int_fast8_t bool;
+//typedef int_fast8_t bool;
 
 #ifndef false
 #define false 0
