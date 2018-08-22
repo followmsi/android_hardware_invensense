@@ -17,6 +17,7 @@ LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLSDK_ROOT)/platform/include/linux
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLPLATFORM_DIR)
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLPLATFORM_DIR)/kernel
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLSDK_ROOT)/mllite
+LOCAL_CFLAGS += -Wno-error
 
 ML_SOURCES := \
     $(MLPLATFORM_DIR)/mlos_linux.c \
@@ -47,6 +48,7 @@ LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLSDK_ROOT)/mlutils -I$(LOCAL_PATH)/$(MLSDK_RO
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLSDK_ROOT)/platform/include/linux
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLSDK_ROOT)/mllite/akmd
 LOCAL_CFLAGS += -I$(LOCAL_PATH)/$(MLPLATFORM_DIR)/linux
+LOCAL_CFLAGS += -Wno-error
 
 # optionally apply the compass filter. this is set in
 # BoardConfig.mk
